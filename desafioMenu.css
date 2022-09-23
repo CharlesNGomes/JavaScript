@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.cabecalho {
+    background-color: #444;
+    border-bottom: solid 5px #038096;
+    height: 80px;
+    box-sizing: content-box;
+
+}
+
+.logo {
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.menu-toggle {
+    float: right;
+    display: none;
+    cursor: pointer;
+    background-color: #555;
+    border-radius: 3px;
+    border: solid 2px #777;
+    color: #eee;
+    padding: 10px;
+    margin: 20px 15px;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    /* padding: 20px; */
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+.menu a {
+    padding: 15px;
+}
+
+.autenticacao {
+    float: right;
+    margin: 20px 15px;
+    height: 80px;
+    padding: 8px;
+}
+
+.menu a:hover,
+.menu a.selector {
+    background-color: #038096;
+    color: black;
+}
+
+.botao {
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.destaque {
+    color: #fff;
+    background-color: red;
+    margin: 0px 10px;
+}
+
+@media (max-width: 900px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
